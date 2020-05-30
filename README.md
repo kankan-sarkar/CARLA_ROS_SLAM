@@ -17,10 +17,10 @@
 - Source the project `source devel/setup.sh` , Everytime when a new terminal is opened the **carlarosbridge** environment is sourced.
 - Run ROS `roscore`.
 - Run carla `./CarlaEU4.sh -windowed -ResX=400 -ResY=320` wait for the carla window to load.
-![](Documentation/CarlaSimulator.png)
+![](CarlaSimulator.png)
 - If you want to launch the carla client with RVIZ then `roslauch carlabg CarlaVehicleWithRviz`.
 - If you want to launch the carla client without RVIZ then `roslauch carlabg CarlaVehicleWithoutRviz`.  
-![](Documentation/CarlaROSClient.png)
+![](CarlaROSClient.png)
   - You can edit the lauch file to play with the carla environment.
     - You can change the spawn point of the vehicle by changing the X,Y,Z location in the above line`  <arg name="spawn_point" default="73.193413,-136.704315,9.837398,-0.647311,-178.772690,0.000000"/>` .
     - If you want to change the vehicle model edit the default model in the `  <arg name="vehicle_filter" default='vehicle.tesla.model3'/>`.
