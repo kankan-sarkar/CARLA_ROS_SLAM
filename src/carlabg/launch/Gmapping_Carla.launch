@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="/use_sim_time" value="true"/>
+
+  <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
+    
+    <remap from="scan" to="/camera/scan"/>
+
+    <param name="base_frame" value="map" /> <!-- Check the Tf frame for your carla ros bridge for the base link-->
+    <remap from="odom" to="/carla/ego_vehicle/odometry" /> <!-- Odometry Frame-->
+    <remap from="map" to="map2" />
+ 	<param name="linearUpdate" value="0.5"/>
+    <param name="angularUpdate" value="0.5"/>
+    <param name="resampleThreshold" value="0.5"/>
+    <param name="particles" value="80"/>
+  </node>
+
+</launch>

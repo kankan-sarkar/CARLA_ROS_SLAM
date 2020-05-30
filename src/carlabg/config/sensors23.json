@@ -1,0 +1,117 @@
+{
+    "sensors": [
+        {
+            "type": "sensor.camera.rgb",
+            "id": "front",
+            "x": 2.0, "y": 0.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0,
+            "width": 800,
+            "height": 600,
+            "fov": 90,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "frontLeft",
+            "x": 2.0, "y": -2.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": 330,
+            "width": 800,
+            "height": 600,
+            "fov": 40,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "frontRight",
+            "x": 2.0, "y": 2.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": 30,
+            "width": 800,
+            "height": 600,
+            "fov": 40,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "view",
+            "x": -4.5, "y": 0.0, "z": 2.8, "roll": 0.0, "pitch": -20.0, "yaw": 0.0,
+            "width": 800,
+            "height": 600,
+            "fov": 100,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "rearLeft",
+            "x": -4.5, "y": -2.0, "z": 2.8, "roll": 0.0, "pitch": -20.0, "yaw":210,
+            "width": 800,
+            "height": 600,
+            "fov": 40,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "rearRight",
+            "x": -4.5, "y": 2.0, "z": 2.8, "roll": 0.0, "pitch": 0.0, "yaw": 150,
+            "width": 800,
+            "height": 600,
+            "fov": 40,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "rear",
+            "x": -5.0, "y": 0.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": 180.0,
+            "width": 800,
+            "height": 600,
+            "fov": 90,
+            "sensor_tick": 0.05
+        },
+ {
+            "type": "sensor.camera.rgb",
+            "id": "sideLeft",
+            "x": 0.0, "y": -2.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": -90.0,
+            "width": 800,
+            "height": 600,
+            "fov": 90,
+            "sensor_tick": 0.05
+        },
+ {
+            "type": "sensor.camera.rgb",
+            "id": "sideRight",
+            "x": 0.0, "y": 2.0, "z": 2.0, "roll": 0.0, "pitch": 0.0, "yaw": 90.0,
+            "width": 800,
+            "height": 600,
+            "fov": 90,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar1",
+            "x": 0.0, "y": 0.0, "z": 2.4, "roll": 0.0, "pitch": 0.0, "yaw": 0.0,
+            "range": 100,
+            "channels": 1,
+            "points_per_second": 3000,
+            "upper_fov": -2,
+            "lower_fov": -26.8,
+            "rotation_frequency": 20,
+            "sensor_tick": 0.05
+        },
+        {
+            "type": "sensor.other.gnss",
+            "id": "gnss1",
+            "x": 1.0, "y": 0.0, "z": 2.0
+        },
+ 	{
+            "type": "sensor.other.gnss",
+            "id": "gnss1",
+            "x": 1.0, "y": 0.0, "z": 2.0
+        },
+        {
+            "type": "sensor.other.collision",
+            "id": "collision1",
+            "x": 0.0, "y": 0.0, "z": 0.0
+        },
+        {
+            "type": "sensor.other.lane_invasion",
+            "id": "laneinvasion1",
+            "x": 0.0, "y": 0.0, "z": 0.0
+        }
+    ]
+}

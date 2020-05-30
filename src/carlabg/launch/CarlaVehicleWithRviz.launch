@@ -1,0 +1,42 @@
+<!-- -->
+<launch>
+	<arg name='host' default='localhost'/>
+	<arg name='port' default='2000'/>
+	<arg name='role_name' default='ego_vehicle'/>
+	<arg name="vehicle_filter" default='vehicle.tesla.model3'/>
+	<arg name="sensor_definition_file" default="$(find carlaconfig)/config/sensors.json"/>
+	<arg name="spawn_point" default="73.193413,-130.704315,9.837398,-0.647311,-178.772690,0.000000"/>
+	<!-- Cloudiness, Precipitation , SunAltitudeAngle -->	
+	<arg name="weather" default="0,0.0,90.0"/> 
+	<arg name="NumberofVehicles" default="0"/>
+	<arg name="NumberofPedestrians" default="0"/> 
+	<arg name="SafeTravel" default="False"/>
+	<arg name="spawn_ego_vehicle" default="True" />
+
+	<arg name="town" default=''/>
+
+<include file="$(find carla_ros_bridge)/launch/carla_ros_bridge.launch">
+	<arg name='host' value='$(arg host)'/>
+	<arg name='port' value='$(arg port)'/>
+	<arg name='town' value='$(arg town)'/>
+</include>
+<node pkg="carlabg" type="carla_ego_vehicle.py" name="carla_ego_vehicle_$(arg role_name)" output="screen">
+	<param name='host' value='$(arg host)'/>
+	<param name='port' value='$(arg port)'/>
+	<param name="sensor_definition_file" value='$(arg sensor_definition_file)'/>
+	<param name="weather" value='$(arg weather)'/> 
+	<param name="NumberofVehicles" value='$(arg NumberofVehicles)'/>
+	<param name="NumberofPedestrians" value='$(arg NumberofPedestrians)'/> 
+	<param name="SafeTravel" value='$(arg SafeTravel)'/> 
+	<param name="vehicle_filter" value='$(arg vehicle_filter)'/>
+	<param name='role_name' value='$(arg role_name)'/>
+	<param name="spawn_point" value="$(arg spawn_point)"/>
+ 	<param name="spawn_ego_vehicle" value="$(arg spawn_ego_vehicle)" />
+</node>
+<include file="$(find pointcloud_to_laserscan)/launch/CarlaPCtoLS.launch">
+</include>
+<include file="$(find carla_manual_control)/launch/carla_manual_control.launch">
+	<arg name='role_name' value='$(arg role_name)'/>
+</include>
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find carlabg)/config/AllDataConf.rviz"/>
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+ 
+ <!--tf remmapper node-->
+  <node pkg="tf" type="tf_remap" name="tf_remapper" output="screen">
+    <rosparam param="mappings">
+      [{old: ego_vehicle, new: base_link}]
+    </rosparam>
+  </node>
+
+ <!--node whose tf needs to be remapped-->
+  <node pkg="rosbag" type="play" name="player" args="/home/drive/test.bag">
+    <remap from="tf" to="tf_old" />
+  </node>
+
+</launch>
