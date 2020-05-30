@@ -1,5 +1,5 @@
 # CarlaRosBridge
-
+[![Build Status](https://travis-ci.org/trripy/CARLA_ROS_SLAM.svg?branch=master)](https://travis-ci.org/trripy/CARLA_ROS_SLAM)
 ## System information on which the above project is tested  
 - Ubuntu 18.04 64bit  
 - Nvidia 1050TI (435- Vulkan enabled)  

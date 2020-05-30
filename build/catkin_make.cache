@@ -1,0 +1,2 @@
+TfRemapper:ainstein_radar_rviz_plugins:carla_ego_vehicle:carla_manual_control:carla_msgs:carla_ros_bridge:carla_waypoint_publisher:carlabg:carlaconfig:carlaodomtf:common/cmake/autoware_build_flags:evarobot_odom_subs
+-DCATKIN_DEVEL_PREFIX=/home/kankan/CARLA_ROS_SLAM/devel -DCMAKE_INSTALL_PREFIX=/home/kankan/CARLA_ROS_SLAM/install -G Unix Makefiles

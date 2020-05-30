@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/devel
+
+Name: carla_manual_control
+Description: Description of carla_manual_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy

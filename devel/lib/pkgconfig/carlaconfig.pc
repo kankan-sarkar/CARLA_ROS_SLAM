@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/devel
+
+Name: carlaconfig
+Description: Description of carlaconfig
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

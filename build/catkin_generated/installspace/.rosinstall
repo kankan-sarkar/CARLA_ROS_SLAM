@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kankan/CARLA_ROS_SLAM/install/setup.sh

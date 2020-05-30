@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/devel
+
+Name: evarobot_odom_subs
+Description: Description of evarobot_odom_subs
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

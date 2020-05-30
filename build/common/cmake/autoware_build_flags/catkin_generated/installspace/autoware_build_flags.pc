@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/install
+
+Name: autoware_build_flags
+Description: Description of autoware_build_flags
+Version: 1.11.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/install
+
+Name: carla_ego_vehicle
+Description: Description of carla_ego_vehicle
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy

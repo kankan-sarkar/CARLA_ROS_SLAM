@@ -1,0 +1,8 @@
+prefix=/home/kankan/CARLA_ROS_SLAM/devel
+
+Name: carla_msgs
+Description: Description of carla_msgs
+Version: 0.1.0
+Cflags: -I/home/kankan/CARLA_ROS_SLAM/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs
